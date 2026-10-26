@@ -1,6 +1,6 @@
 # Axion — mission control for AI coding agents
 
-> A local, open-source web app to run AI coding CLIs in isolated git worktrees, review their diffs, and merge only what you approve. Formerly *AI-Orc*; the old standalone dashboard repo is archived as [axion-legacy](https://github.com/WickTech/axion-legacy) and now lives in `packages/core`.
+> A local, open-source web app to run AI coding CLIs in isolated git worktrees, review their diffs, and merge only what you approve. Formerly *AI-Orc*; the old standalone dashboard is now merged into `packages/core`.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org)
