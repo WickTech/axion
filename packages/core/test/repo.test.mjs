@@ -9,8 +9,8 @@ const monorepoRoot = path.resolve(rootDir, '..', '..');
 
 test('AC-60: CI workflow runs on push/pull_request with the expected steps', async () => {
   const text = await fs.readFile(path.join(monorepoRoot, '.github', 'workflows', 'ci.yml'), 'utf8');
-  assert.ok(text.includes('actions/checkout@v4'));
-  assert.ok(text.includes('actions/setup-node@v4'));
+  assert.ok(/actions\/checkout@[0-9a-f]{40} # v4/.test(text));
+  assert.ok(/actions\/setup-node@[0-9a-f]{40} # v4/.test(text));
   assert.ok(text.includes('node-version: 22'));
   assert.ok(text.includes('cache: npm'));
   assert.ok(text.includes('npm ci'));
