@@ -7,7 +7,7 @@ const clone = vi.fn()
 const pull = vi.fn()
 
 vi.mock("simple-git", () => ({
-  default: () => ({ clone, pull }),
+  simpleGit: () => ({ clone, pull }),
 }))
 
 const README = `# Cool Tool

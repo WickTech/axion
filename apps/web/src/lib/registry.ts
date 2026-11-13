@@ -1,7 +1,7 @@
 import path from "path"
 import { dataDir } from "@/lib/paths"
 import { promises as fs } from "fs"
-import simpleGit from "simple-git"
+import { simpleGit } from "simple-git"
 import type { InstallStep, RegistryAddResult } from "@/types"
 
 const toolsDir = () => path.join(dataDir(), "tools")
